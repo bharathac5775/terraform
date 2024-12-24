@@ -1,0 +1,887 @@
+2024-12-25T01:38:24.602+0530 [INFO]  Terraform version: 1.10.3
+2024-12-25T01:38:24.602+0530 [DEBUG] using github.com/hashicorp/go-tfe v1.70.0
+2024-12-25T01:38:24.602+0530 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.0
+2024-12-25T01:38:24.602+0530 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2024-12-25T01:38:24.602+0530 [DEBUG] using github.com/zclconf/go-cty v1.15.1-0.20241111215639-63279be090d7
+2024-12-25T01:38:24.602+0530 [INFO]  Go runtime version: go1.23.3
+2024-12-25T01:38:24.602+0530 [INFO]  CLI args: []string{"terraform", "apply"}
+2024-12-25T01:38:24.602+0530 [DEBUG] Attempting to open CLI config file: /home/msis/.terraformrc
+2024-12-25T01:38:24.602+0530 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2024-12-25T01:38:24.602+0530 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2024-12-25T01:38:24.602+0530 [DEBUG] ignoring non-existing provider search directory /home/msis/.terraform.d/plugins
+2024-12-25T01:38:24.602+0530 [DEBUG] ignoring non-existing provider search directory /home/msis/.local/share/terraform/plugins
+2024-12-25T01:38:24.602+0530 [DEBUG] ignoring non-existing provider search directory /usr/share/ubuntu/terraform/plugins
+2024-12-25T01:38:24.602+0530 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2024-12-25T01:38:24.602+0530 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2024-12-25T01:38:24.602+0530 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2024-12-25T01:38:24.603+0530 [INFO]  CLI command args: []string{"apply"}
+2024-12-25T01:38:24.685+0530 [DEBUG] checking for provisioner in "."
+2024-12-25T01:38:24.690+0530 [DEBUG] checking for provisioner in "/usr/bin"
+2024-12-25T01:38:24.691+0530 [INFO]  backend/local: starting Apply operation
+2024-12-25T01:38:24.692+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T01:38:24.692+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T01:38:24.704+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5"]
+2024-12-25T01:38:24.704+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 pid=1257150
+2024-12-25T01:38:24.704+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5
+2024-12-25T01:38:24.708+0530 [INFO]  provider.terraform-provider-null_v3.2.3_x5: configuring server automatic mTLS: timestamp="2024-12-25T01:38:24.708+0530"
+2024-12-25T01:38:24.720+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T01:38:24.720+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: plugin address: address=/tmp/plugin963550947 network=unix timestamp="2024-12-25T01:38:24.720+0530"
+2024-12-25T01:38:24.731+0530 [DEBUG] No provider meta schema returned
+2024-12-25T01:38:24.731+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T01:38:24.732+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 id=1257150
+2024-12-25T01:38:24.732+0530 [DEBUG] provider: plugin exited
+2024-12-25T01:38:24.732+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T01:38:24.732+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T01:38:24.737+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0 args=[".terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0"]
+2024-12-25T01:38:24.737+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0 pid=1257159
+2024-12-25T01:38:24.737+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0
+2024-12-25T01:38:24.741+0530 [INFO]  provider.terraform-provider-ssh_v2.7.0: configuring server automatic mTLS: timestamp="2024-12-25T01:38:24.741+0530"
+2024-12-25T01:38:24.754+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T01:38:24.754+0530 [DEBUG] provider.terraform-provider-ssh_v2.7.0: plugin address: address=/tmp/plugin304484017 network=unix timestamp="2024-12-25T01:38:24.753+0530"
+2024-12-25T01:38:24.764+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T01:38:24.765+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0 id=1257159
+2024-12-25T01:38:24.765+0530 [DEBUG] provider: plugin exited
+2024-12-25T01:38:24.765+0530 [DEBUG] Building and walking validate graph
+2024-12-25T01:38:24.765+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:24.765+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:24.765+0530 [DEBUG] pruning unused provider["registry.terraform.io/loafoe/ssh"]
+2024-12-25T01:38:24.766+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:38:24.766+0530 [DEBUG] ReferenceTransformer: "var.ssh_private_key" references: []
+2024-12-25T01:38:24.766+0530 [DEBUG] ReferenceTransformer: "var.worker_ips" references: []
+2024-12-25T01:38:24.766+0530 [DEBUG] ReferenceTransformer: "var.ssh_user" references: []
+2024-12-25T01:38:24.766+0530 [DEBUG] ReferenceTransformer: "output.docker_status (expand)" references: []
+2024-12-25T01:38:24.766+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/null\"]" references: []
+2024-12-25T01:38:24.766+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:38:24.766+0530 [DEBUG] Starting graph walk: walkValidate
+2024-12-25T01:38:24.766+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T01:38:24.766+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T01:38:24.771+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5"]
+2024-12-25T01:38:24.771+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 pid=1257169
+2024-12-25T01:38:24.771+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5
+2024-12-25T01:38:24.775+0530 [INFO]  provider.terraform-provider-null_v3.2.3_x5: configuring server automatic mTLS: timestamp="2024-12-25T01:38:24.775+0530"
+2024-12-25T01:38:24.787+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T01:38:24.787+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: plugin address: address=/tmp/plugin664316424 network=unix timestamp="2024-12-25T01:38:24.787+0530"
+2024-12-25T01:38:24.799+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T01:38:24.800+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 id=1257169
+2024-12-25T01:38:24.800+0530 [DEBUG] provider: plugin exited
+2024-12-25T01:38:24.801+0530 [INFO]  backend/local: apply calling Plan
+2024-12-25T01:38:24.801+0530 [DEBUG] Building and walking plan graph for NormalMode
+2024-12-25T01:38:24.801+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:24.801+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:24.801+0530 [DEBUG] pruning unused provider["registry.terraform.io/loafoe/ssh"]
+2024-12-25T01:38:24.801+0530 [DEBUG] ReferenceTransformer: "var.worker_ips" references: []
+2024-12-25T01:38:24.801+0530 [DEBUG] ReferenceTransformer: "var.ssh_user" references: []
+2024-12-25T01:38:24.801+0530 [DEBUG] ReferenceTransformer: "var.ssh_private_key" references: []
+2024-12-25T01:38:24.801+0530 [DEBUG] ReferenceTransformer: "output.docker_status (expand)" references: []
+2024-12-25T01:38:24.801+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/null\"]" references: []
+2024-12-25T01:38:24.801+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker (expand)" references: [var.worker_ips var.ssh_user var.ssh_private_key]
+2024-12-25T01:38:24.801+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app (expand)" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:38:24.801+0530 [DEBUG] Starting graph walk: walkPlan
+2024-12-25T01:38:24.802+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T01:38:24.802+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T01:38:24.806+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5"]
+2024-12-25T01:38:24.807+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 pid=1257177
+2024-12-25T01:38:24.807+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5
+2024-12-25T01:38:24.810+0530 [INFO]  provider.terraform-provider-null_v3.2.3_x5: configuring server automatic mTLS: timestamp="2024-12-25T01:38:24.810+0530"
+2024-12-25T01:38:24.822+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T01:38:24.822+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: plugin address: address=/tmp/plugin4014921056 network=unix timestamp="2024-12-25T01:38:24.822+0530"
+2024-12-25T01:38:24.832+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker[\"172.16.51.46\"]" references: []
+2024-12-25T01:38:24.832+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker[\"172.16.51.54\"]" references: []
+2024-12-25T01:38:24.833+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.46\"]" references: []
+2024-12-25T01:38:24.833+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.54\"]" references: []
+2024-12-25T01:38:24.835+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Value switched to prior value due to semantic equality logic: tf_attribute_path=id tf_req_id=4e5011cc-f744-2bc0-3cb3-2803dd11db2e tf_resource_type=null_resource tf_rpc=ReadResource @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null timestamp="2024-12-25T01:38:24.835+0530"
+2024-12-25T01:38:24.835+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Value switched to prior value due to semantic equality logic: tf_req_id=bd6a0422-c4ed-ddea-a9da-10b7273ef00f tf_resource_type=null_resource tf_attribute_path=id tf_provider_addr=registry.terraform.io/hashicorp/null tf_rpc=ReadResource @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 @module=sdk.framework timestamp="2024-12-25T01:38:24.835+0530"
+2024-12-25T01:38:24.836+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Value switched to prior value due to semantic equality logic: tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=69746fce-175c-7538-7d9c-d839ed2cf058 tf_resource_type=null_resource tf_rpc=ReadResource tf_attribute_path=id @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 @module=sdk.framework timestamp="2024-12-25T01:38:24.835+0530"
+2024-12-25T01:38:24.836+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Value switched to prior value due to semantic equality logic: tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=3985a67c-22bd-3dfc-b5de-7fbce24fc985 @module=sdk.framework tf_attribute_path=id tf_resource_type=null_resource tf_rpc=ReadResource @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 timestamp="2024-12-25T01:38:24.835+0530"
+2024-12-25T01:38:24.837+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=e7ae6560-e533-2931-34d0-109434e82a07 @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 tf_resource_type=null_resource tf_rpc=PlanResourceChange timestamp="2024-12-25T01:38:24.837+0530"
+2024-12-25T01:38:24.837+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 tf_req_id=e7ae6560-e533-2931-34d0-109434e82a07 tf_rpc=PlanResourceChange @module=sdk.framework tf_attribute_path="AttributeName(\"id\")" tf_provider_addr=registry.terraform.io/hashicorp/null tf_resource_type=null_resource timestamp="2024-12-25T01:38:24.837+0530"
+2024-12-25T01:38:24.838+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=70e82084-1415-af0f-2a3a-f31dc589c2ad tf_resource_type=null_resource @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 @module=sdk.framework tf_rpc=PlanResourceChange timestamp="2024-12-25T01:38:24.837+0530"
+2024-12-25T01:38:24.838+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: @module=sdk.framework tf_req_id=70e82084-1415-af0f-2a3a-f31dc589c2ad tf_attribute_path="AttributeName(\"id\")" tf_provider_addr=registry.terraform.io/hashicorp/null tf_resource_type=null_resource tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 timestamp="2024-12-25T01:38:24.837+0530"
+2024-12-25T01:38:24.839+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T01:38:24.840+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 id=1257177
+2024-12-25T01:38:24.840+0530 [DEBUG] provider: plugin exited
+2024-12-25T01:38:24.840+0530 [DEBUG] building apply graph to check for errors
+2024-12-25T01:38:24.841+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.46\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:24.841+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.46\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:24.841+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:24.841+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.54\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:24.841+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.54\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:24.841+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:24.841+0530 [DEBUG] pruning unused provider["registry.terraform.io/loafoe/ssh"]
+2024-12-25T01:38:24.841+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker (expand)" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:38:24.841+0530 [DEBUG] ReferenceTransformer: "var.worker_ips" references: []
+2024-12-25T01:38:24.841+0530 [DEBUG] ReferenceTransformer: "var.ssh_user" references: []
+2024-12-25T01:38:24.841+0530 [DEBUG] ReferenceTransformer: "output.docker_status (expand)" references: []
+2024-12-25T01:38:24.841+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.46\"]" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:38:24.841+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app (expand)" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:38:24.841+0530 [DEBUG] ReferenceTransformer: "var.ssh_private_key" references: []
+2024-12-25T01:38:24.841+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.54\"]" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:38:24.841+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/null\"]" references: []
+2024-12-25T01:38:24.842+0530 [DEBUG] command: asking for input: "\nDo you want to perform these actions?"
+2024-12-25T01:38:27.528+0530 [INFO]  backend/local: apply calling Apply
+2024-12-25T01:38:27.528+0530 [DEBUG] Building and walking apply graph for NormalMode plan
+2024-12-25T01:38:27.529+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.54\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:27.529+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:27.529+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.46\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:27.529+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:27.529+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.46\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:27.529+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.54\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:38:27.530+0530 [DEBUG] pruning unused provider["registry.terraform.io/loafoe/ssh"]
+2024-12-25T01:38:27.531+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app (expand)" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:38:27.531+0530 [DEBUG] ReferenceTransformer: "var.worker_ips" references: []
+2024-12-25T01:38:27.531+0530 [DEBUG] ReferenceTransformer: "var.ssh_user" references: []
+2024-12-25T01:38:27.531+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/null\"]" references: []
+2024-12-25T01:38:27.531+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker (expand)" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:38:27.531+0530 [DEBUG] ReferenceTransformer: "var.ssh_private_key" references: []
+2024-12-25T01:38:27.531+0530 [DEBUG] ReferenceTransformer: "output.docker_status (expand)" references: []
+2024-12-25T01:38:27.531+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.46\"]" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:38:27.531+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.54\"]" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:38:27.534+0530 [DEBUG] Starting graph walk: walkApply
+2024-12-25T01:38:27.534+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T01:38:27.534+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T01:38:27.548+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5"]
+2024-12-25T01:38:27.548+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 pid=1257186
+2024-12-25T01:38:27.549+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5
+2024-12-25T01:38:27.555+0530 [INFO]  provider.terraform-provider-null_v3.2.3_x5: configuring server automatic mTLS: timestamp="2024-12-25T01:38:27.555+0530"
+2024-12-25T01:38:27.568+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T01:38:27.568+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: plugin address: network=unix address=/tmp/plugin3712703040 timestamp="2024-12-25T01:38:27.568+0530"
+2024-12-25T01:38:27.579+0530 [INFO]  Starting apply for null_resource.deploy_app["172.16.51.54"]
+2024-12-25T01:38:27.579+0530 [INFO]  Starting apply for null_resource.deploy_app["172.16.51.46"]
+2024-12-25T01:38:27.579+0530 [DEBUG] null_resource.deploy_app["172.16.51.54"]: applying the planned Delete change
+2024-12-25T01:38:27.579+0530 [DEBUG] null_resource.deploy_app["172.16.51.46"]: applying the planned Delete change
+2024-12-25T01:38:27.619+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2024-12-25T01:38:27.669+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2024-12-25T01:38:27.675+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null tf_rpc=PlanResourceChange tf_req_id=fbd67fd4-1c05-e2ac-21d9-ed98b2b75932 tf_resource_type=null_resource @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 timestamp="2024-12-25T01:38:27.675+0530"
+2024-12-25T01:38:27.675+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: @module=sdk.framework tf_req_id=fbd67fd4-1c05-e2ac-21d9-ed98b2b75932 @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 tf_resource_type=null_resource tf_rpc=PlanResourceChange tf_attribute_path="AttributeName(\"id\")" tf_provider_addr=registry.terraform.io/hashicorp/null timestamp="2024-12-25T01:38:27.675+0530"
+2024-12-25T01:38:27.677+0530 [INFO]  Starting apply for null_resource.deploy_app["172.16.51.54"]
+2024-12-25T01:38:27.677+0530 [DEBUG] null_resource.deploy_app["172.16.51.54"]: applying the planned Create change
+2024-12-25T01:38:27.678+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: tf_rpc=PlanResourceChange tf_provider_addr=registry.terraform.io/hashicorp/null @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 @module=sdk.framework tf_req_id=95990b15-e1e4-d06c-c705-910f26210f37 tf_resource_type=null_resource timestamp="2024-12-25T01:38:27.676+0530"
+2024-12-25T01:38:27.678+0530 [INFO]  Starting apply for null_resource.deploy_app["172.16.51.46"]
+2024-12-25T01:38:27.678+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 @module=sdk.framework tf_attribute_path="AttributeName(\"id\")" tf_provider_addr=registry.terraform.io/hashicorp/null tf_resource_type=null_resource tf_req_id=95990b15-e1e4-d06c-c705-910f26210f37 timestamp="2024-12-25T01:38:27.676+0530"
+2024-12-25T01:38:27.678+0530 [DEBUG] null_resource.deploy_app["172.16.51.46"]: applying the planned Create change
+2024-12-25T01:38:27.681+0530 [INFO]  using private key for authentication
+2024-12-25T01:38:27.682+0530 [INFO]  using private key for authentication
+2024-12-25T01:38:27.682+0530 [DEBUG] Connecting to 172.16.51.46:22 for SSH
+2024-12-25T01:38:27.682+0530 [DEBUG] Connecting to 172.16.51.54:22 for SSH
+2024-12-25T01:38:27.683+0530 [DEBUG] Connection established. Handshaking for user msis
+2024-12-25T01:38:27.683+0530 [DEBUG] Connection established. Handshaking for user msis
+2024-12-25T01:38:27.731+0530 [DEBUG] Telling SSH config to forward to agent
+2024-12-25T01:38:27.731+0530 [DEBUG] Setting up a session to request agent forwarding
+2024-12-25T01:38:27.733+0530 [DEBUG] Telling SSH config to forward to agent
+2024-12-25T01:38:27.733+0530 [DEBUG] Setting up a session to request agent forwarding
+2024-12-25T01:38:27.819+0530 [INFO]  agent forwarding enabled
+2024-12-25T01:38:27.819+0530 [DEBUG] starting ssh KeepAlives
+2024-12-25T01:38:27.819+0530 [WARN]  Errors while provisioning null_resource.deploy_app["172.16.51.46"] with "file", so aborting
+2024-12-25T01:38:27.831+0530 [INFO]  agent forwarding enabled
+2024-12-25T01:38:27.831+0530 [DEBUG] starting ssh KeepAlives
+2024-12-25T01:38:27.831+0530 [WARN]  Errors while provisioning null_resource.deploy_app["172.16.51.54"] with "file", so aborting
+2024-12-25T01:38:27.870+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2024-12-25T01:38:27.870+0530 [ERROR] vertex "null_resource.deploy_app[\"172.16.51.46\"]" error: file provisioner error
+2024-12-25T01:38:27.912+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2024-12-25T01:38:27.912+0530 [ERROR] vertex "null_resource.deploy_app[\"172.16.51.54\"]" error: file provisioner error
+2024-12-25T01:38:27.957+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T01:38:27.959+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 id=1257186
+2024-12-25T01:38:27.959+0530 [DEBUG] provider: plugin exited
+2024-12-25T01:44:41.488+0530 [INFO]  Terraform version: 1.10.3
+2024-12-25T01:44:41.488+0530 [DEBUG] using github.com/hashicorp/go-tfe v1.70.0
+2024-12-25T01:44:41.488+0530 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.0
+2024-12-25T01:44:41.488+0530 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2024-12-25T01:44:41.488+0530 [DEBUG] using github.com/zclconf/go-cty v1.15.1-0.20241111215639-63279be090d7
+2024-12-25T01:44:41.488+0530 [INFO]  Go runtime version: go1.23.3
+2024-12-25T01:44:41.488+0530 [INFO]  CLI args: []string{"terraform", "init"}
+2024-12-25T01:44:41.488+0530 [DEBUG] Attempting to open CLI config file: /home/msis/.terraformrc
+2024-12-25T01:44:41.488+0530 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2024-12-25T01:44:41.489+0530 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2024-12-25T01:44:41.489+0530 [DEBUG] ignoring non-existing provider search directory /home/msis/.terraform.d/plugins
+2024-12-25T01:44:41.489+0530 [DEBUG] ignoring non-existing provider search directory /home/msis/.local/share/terraform/plugins
+2024-12-25T01:44:41.489+0530 [DEBUG] ignoring non-existing provider search directory /usr/share/ubuntu/terraform/plugins
+2024-12-25T01:44:41.489+0530 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2024-12-25T01:44:41.489+0530 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2024-12-25T01:44:41.489+0530 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2024-12-25T01:44:41.489+0530 [INFO]  CLI command args: []string{"init"}
+2024-12-25T01:44:41.573+0530 [DEBUG] checking for provisioner in "."
+2024-12-25T01:44:41.578+0530 [DEBUG] checking for provisioner in "/usr/bin"
+2024-12-25T01:44:41.579+0530 [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
+2024-12-25T01:44:41.730+0530 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/null/versions
+2024-12-25T01:44:41.802+0530 [DEBUG] GET https://registry.terraform.io/v1/providers/loafoe/ssh/versions
+2024-12-25T01:44:47.939+0530 [INFO]  Terraform version: 1.10.3
+2024-12-25T01:44:47.939+0530 [DEBUG] using github.com/hashicorp/go-tfe v1.70.0
+2024-12-25T01:44:47.939+0530 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.0
+2024-12-25T01:44:47.939+0530 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2024-12-25T01:44:47.939+0530 [DEBUG] using github.com/zclconf/go-cty v1.15.1-0.20241111215639-63279be090d7
+2024-12-25T01:44:47.939+0530 [INFO]  Go runtime version: go1.23.3
+2024-12-25T01:44:47.939+0530 [INFO]  CLI args: []string{"terraform", "apply"}
+2024-12-25T01:44:47.939+0530 [DEBUG] Attempting to open CLI config file: /home/msis/.terraformrc
+2024-12-25T01:44:47.939+0530 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2024-12-25T01:44:47.939+0530 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2024-12-25T01:44:47.939+0530 [DEBUG] ignoring non-existing provider search directory /home/msis/.terraform.d/plugins
+2024-12-25T01:44:47.939+0530 [DEBUG] ignoring non-existing provider search directory /home/msis/.local/share/terraform/plugins
+2024-12-25T01:44:47.939+0530 [DEBUG] ignoring non-existing provider search directory /usr/share/ubuntu/terraform/plugins
+2024-12-25T01:44:47.939+0530 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2024-12-25T01:44:47.939+0530 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2024-12-25T01:44:47.939+0530 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2024-12-25T01:44:47.940+0530 [INFO]  CLI command args: []string{"apply"}
+2024-12-25T01:44:48.022+0530 [DEBUG] checking for provisioner in "."
+2024-12-25T01:44:48.028+0530 [DEBUG] checking for provisioner in "/usr/bin"
+2024-12-25T01:44:48.028+0530 [INFO]  backend/local: starting Apply operation
+2024-12-25T01:44:48.029+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T01:44:48.029+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T01:44:48.041+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5"]
+2024-12-25T01:44:48.042+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 pid=1258316
+2024-12-25T01:44:48.042+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5
+2024-12-25T01:44:48.045+0530 [INFO]  provider.terraform-provider-null_v3.2.3_x5: configuring server automatic mTLS: timestamp="2024-12-25T01:44:48.045+0530"
+2024-12-25T01:44:48.057+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T01:44:48.057+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: plugin address: address=/tmp/plugin3015429430 network=unix timestamp="2024-12-25T01:44:48.057+0530"
+2024-12-25T01:44:48.068+0530 [DEBUG] No provider meta schema returned
+2024-12-25T01:44:48.068+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T01:44:48.069+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 id=1258316
+2024-12-25T01:44:48.069+0530 [DEBUG] provider: plugin exited
+2024-12-25T01:44:48.069+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T01:44:48.069+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T01:44:48.074+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0 args=[".terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0"]
+2024-12-25T01:44:48.074+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0 pid=1258324
+2024-12-25T01:44:48.074+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0
+2024-12-25T01:44:48.078+0530 [INFO]  provider.terraform-provider-ssh_v2.7.0: configuring server automatic mTLS: timestamp="2024-12-25T01:44:48.078+0530"
+2024-12-25T01:44:48.091+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T01:44:48.091+0530 [DEBUG] provider.terraform-provider-ssh_v2.7.0: plugin address: address=/tmp/plugin1577684374 network=unix timestamp="2024-12-25T01:44:48.091+0530"
+2024-12-25T01:44:48.102+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T01:44:48.103+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0 id=1258324
+2024-12-25T01:44:48.103+0530 [DEBUG] provider: plugin exited
+2024-12-25T01:44:48.103+0530 [DEBUG] Building and walking validate graph
+2024-12-25T01:44:48.103+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:48.103+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:48.103+0530 [DEBUG] pruning unused provider["registry.terraform.io/loafoe/ssh"]
+2024-12-25T01:44:48.103+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:44:48.103+0530 [DEBUG] ReferenceTransformer: "var.worker_ips" references: []
+2024-12-25T01:44:48.103+0530 [DEBUG] ReferenceTransformer: "var.ssh_user" references: []
+2024-12-25T01:44:48.103+0530 [DEBUG] ReferenceTransformer: "var.ssh_private_key" references: []
+2024-12-25T01:44:48.104+0530 [DEBUG] ReferenceTransformer: "output.docker_status (expand)" references: []
+2024-12-25T01:44:48.104+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/null\"]" references: []
+2024-12-25T01:44:48.104+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:44:48.104+0530 [DEBUG] Starting graph walk: walkValidate
+2024-12-25T01:44:48.104+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T01:44:48.104+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T01:44:48.109+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5"]
+2024-12-25T01:44:48.109+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 pid=1258333
+2024-12-25T01:44:48.109+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5
+2024-12-25T01:44:48.113+0530 [INFO]  provider.terraform-provider-null_v3.2.3_x5: configuring server automatic mTLS: timestamp="2024-12-25T01:44:48.113+0530"
+2024-12-25T01:44:48.125+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T01:44:48.125+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: plugin address: address=/tmp/plugin850648879 network=unix timestamp="2024-12-25T01:44:48.125+0530"
+2024-12-25T01:44:48.138+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T01:44:48.138+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 id=1258333
+2024-12-25T01:44:48.138+0530 [DEBUG] provider: plugin exited
+2024-12-25T01:44:48.139+0530 [INFO]  backend/local: apply calling Plan
+2024-12-25T01:44:48.139+0530 [DEBUG] Building and walking plan graph for NormalMode
+2024-12-25T01:44:48.139+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:48.139+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:48.139+0530 [DEBUG] pruning unused provider["registry.terraform.io/loafoe/ssh"]
+2024-12-25T01:44:48.139+0530 [DEBUG] ReferenceTransformer: "var.ssh_private_key" references: []
+2024-12-25T01:44:48.139+0530 [DEBUG] ReferenceTransformer: "var.worker_ips" references: []
+2024-12-25T01:44:48.139+0530 [DEBUG] ReferenceTransformer: "var.ssh_user" references: []
+2024-12-25T01:44:48.139+0530 [DEBUG] ReferenceTransformer: "output.docker_status (expand)" references: []
+2024-12-25T01:44:48.139+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/null\"]" references: []
+2024-12-25T01:44:48.139+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker (expand)" references: [var.worker_ips var.ssh_user var.ssh_private_key]
+2024-12-25T01:44:48.139+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app (expand)" references: [var.worker_ips var.ssh_user var.ssh_private_key]
+2024-12-25T01:44:48.139+0530 [DEBUG] Starting graph walk: walkPlan
+2024-12-25T01:44:48.140+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T01:44:48.140+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T01:44:48.144+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5"]
+2024-12-25T01:44:48.145+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 pid=1258342
+2024-12-25T01:44:48.145+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5
+2024-12-25T01:44:48.148+0530 [INFO]  provider.terraform-provider-null_v3.2.3_x5: configuring server automatic mTLS: timestamp="2024-12-25T01:44:48.148+0530"
+2024-12-25T01:44:48.160+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: plugin address: address=/tmp/plugin2101206759 network=unix timestamp="2024-12-25T01:44:48.160+0530"
+2024-12-25T01:44:48.160+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T01:44:48.170+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker[\"172.16.51.46\"]" references: []
+2024-12-25T01:44:48.171+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker[\"172.16.51.54\"]" references: []
+2024-12-25T01:44:48.171+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.46\"]" references: []
+2024-12-25T01:44:48.171+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.54\"]" references: []
+2024-12-25T01:44:48.172+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Value switched to prior value due to semantic equality logic: tf_req_id=e3e42b22-c41f-9d84-5786-1d29420509c6 tf_resource_type=null_resource tf_rpc=ReadResource @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 tf_attribute_path=id timestamp="2024-12-25T01:44:48.172+0530"
+2024-12-25T01:44:48.172+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Value switched to prior value due to semantic equality logic: tf_attribute_path=id tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=5a1348ee-c046-c7cf-56ba-b05455d4c7e8 tf_resource_type=null_resource tf_rpc=ReadResource @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 @module=sdk.framework timestamp="2024-12-25T01:44:48.172+0530"
+2024-12-25T01:44:48.173+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Value switched to prior value due to semantic equality logic: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 @module=sdk.framework tf_req_id=5ea8d5c5-e2f8-7cff-78d6-76c5cd00b43d tf_resource_type=null_resource tf_attribute_path=id tf_provider_addr=registry.terraform.io/hashicorp/null tf_rpc=ReadResource timestamp="2024-12-25T01:44:48.173+0530"
+2024-12-25T01:44:48.173+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Value switched to prior value due to semantic equality logic: tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=7c292b4c-6ac2-37f9-5b65-b1043b0307d4 @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 @module=sdk.framework tf_attribute_path=id tf_resource_type=null_resource tf_rpc=ReadResource timestamp="2024-12-25T01:44:48.173+0530"
+2024-12-25T01:44:48.175+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: tf_req_id=ccf5b0b4-c659-7e33-3ede-6e4b7df3a1d6 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null tf_resource_type=null_resource tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 timestamp="2024-12-25T01:44:48.175+0530"
+2024-12-25T01:44:48.175+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=ccf5b0b4-c659-7e33-3ede-6e4b7df3a1d6 tf_resource_type=null_resource @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 tf_rpc=PlanResourceChange @module=sdk.framework tf_attribute_path="AttributeName(\"id\")" timestamp="2024-12-25T01:44:48.175+0530"
+2024-12-25T01:44:48.175+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: tf_resource_type=null_resource tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 tf_req_id=343215af-f8b6-e90a-f7b5-a5766a029ccd @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null timestamp="2024-12-25T01:44:48.175+0530"
+2024-12-25T01:44:48.176+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: tf_resource_type=null_resource tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 @module=sdk.framework tf_attribute_path="AttributeName(\"id\")" tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=343215af-f8b6-e90a-f7b5-a5766a029ccd timestamp="2024-12-25T01:44:48.175+0530"
+2024-12-25T01:44:48.177+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T01:44:48.177+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 id=1258342
+2024-12-25T01:44:48.178+0530 [DEBUG] provider: plugin exited
+2024-12-25T01:44:48.178+0530 [DEBUG] building apply graph to check for errors
+2024-12-25T01:44:48.178+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:48.178+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.54\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:48.178+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.46\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:48.178+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:48.178+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.54\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:48.178+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.46\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:48.178+0530 [DEBUG] pruning unused provider["registry.terraform.io/loafoe/ssh"]
+2024-12-25T01:44:48.179+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.54\"]" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:44:48.179+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.46\"]" references: [var.worker_ips var.ssh_user var.ssh_private_key]
+2024-12-25T01:44:48.179+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/null\"]" references: []
+2024-12-25T01:44:48.179+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app (expand)" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:44:48.179+0530 [DEBUG] ReferenceTransformer: "var.worker_ips" references: []
+2024-12-25T01:44:48.179+0530 [DEBUG] ReferenceTransformer: "var.ssh_private_key" references: []
+2024-12-25T01:44:48.179+0530 [DEBUG] ReferenceTransformer: "output.docker_status (expand)" references: []
+2024-12-25T01:44:48.179+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker (expand)" references: [var.worker_ips var.ssh_user var.ssh_private_key]
+2024-12-25T01:44:48.179+0530 [DEBUG] ReferenceTransformer: "var.ssh_user" references: []
+2024-12-25T01:44:48.180+0530 [DEBUG] command: asking for input: "\nDo you want to perform these actions?"
+2024-12-25T01:44:50.080+0530 [INFO]  backend/local: apply calling Apply
+2024-12-25T01:44:50.080+0530 [DEBUG] Building and walking apply graph for NormalMode plan
+2024-12-25T01:44:50.080+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.54\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:50.080+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.46\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:50.080+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.46\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:50.080+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:50.080+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.54\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:50.080+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T01:44:50.080+0530 [DEBUG] pruning unused provider["registry.terraform.io/loafoe/ssh"]
+2024-12-25T01:44:50.081+0530 [DEBUG] ReferenceTransformer: "var.ssh_private_key" references: []
+2024-12-25T01:44:50.081+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.46\"]" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:44:50.081+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker (expand)" references: [var.worker_ips var.ssh_user var.ssh_private_key]
+2024-12-25T01:44:50.081+0530 [DEBUG] ReferenceTransformer: "var.worker_ips" references: []
+2024-12-25T01:44:50.081+0530 [DEBUG] ReferenceTransformer: "var.ssh_user" references: []
+2024-12-25T01:44:50.081+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/null\"]" references: []
+2024-12-25T01:44:50.081+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app (expand)" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T01:44:50.081+0530 [DEBUG] ReferenceTransformer: "output.docker_status (expand)" references: []
+2024-12-25T01:44:50.081+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.54\"]" references: [var.worker_ips var.ssh_user var.ssh_private_key]
+2024-12-25T01:44:50.082+0530 [DEBUG] Starting graph walk: walkApply
+2024-12-25T01:44:50.082+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T01:44:50.082+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T01:44:50.087+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5"]
+2024-12-25T01:44:50.088+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 pid=1258394
+2024-12-25T01:44:50.088+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5
+2024-12-25T01:44:50.092+0530 [INFO]  provider.terraform-provider-null_v3.2.3_x5: configuring server automatic mTLS: timestamp="2024-12-25T01:44:50.092+0530"
+2024-12-25T01:44:50.105+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T01:44:50.105+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: plugin address: address=/tmp/plugin3947273878 network=unix timestamp="2024-12-25T01:44:50.105+0530"
+2024-12-25T01:44:50.118+0530 [INFO]  Starting apply for null_resource.deploy_app["172.16.51.46"]
+2024-12-25T01:44:50.118+0530 [INFO]  Starting apply for null_resource.deploy_app["172.16.51.54"]
+2024-12-25T01:44:50.118+0530 [DEBUG] null_resource.deploy_app["172.16.51.54"]: applying the planned Delete change
+2024-12-25T01:44:50.118+0530 [DEBUG] null_resource.deploy_app["172.16.51.46"]: applying the planned Delete change
+2024-12-25T01:44:50.406+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2024-12-25T01:44:50.594+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2024-12-25T01:44:50.599+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null tf_resource_type=null_resource tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 tf_req_id=9e659657-e76d-9c04-49b0-99d515ef0098 timestamp="2024-12-25T01:44:50.599+0530"
+2024-12-25T01:44:50.599+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: tf_attribute_path="AttributeName(\"id\")" tf_req_id=9e659657-e76d-9c04-49b0-99d515ef0098 tf_resource_type=null_resource tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null timestamp="2024-12-25T01:44:50.599+0530"
+2024-12-25T01:44:50.599+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=34d5869e-fcf2-4a65-76f9-79802338185c tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 @module=sdk.framework tf_resource_type=null_resource timestamp="2024-12-25T01:44:50.599+0530"
+2024-12-25T01:44:50.600+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=34d5869e-fcf2-4a65-76f9-79802338185c tf_rpc=PlanResourceChange tf_attribute_path="AttributeName(\"id\")" tf_resource_type=null_resource @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 timestamp="2024-12-25T01:44:50.599+0530"
+2024-12-25T01:44:50.600+0530 [INFO]  Starting apply for null_resource.deploy_app["172.16.51.46"]
+2024-12-25T01:44:50.601+0530 [INFO]  Starting apply for null_resource.deploy_app["172.16.51.54"]
+2024-12-25T01:44:50.601+0530 [DEBUG] null_resource.deploy_app["172.16.51.46"]: applying the planned Create change
+2024-12-25T01:44:50.601+0530 [DEBUG] null_resource.deploy_app["172.16.51.54"]: applying the planned Create change
+2024-12-25T01:44:50.604+0530 [INFO]  using private key for authentication
+2024-12-25T01:44:50.604+0530 [INFO]  using private key for authentication
+2024-12-25T01:44:50.604+0530 [DEBUG] Connecting to 172.16.51.54:22 for SSH
+2024-12-25T01:44:50.604+0530 [DEBUG] Connecting to 172.16.51.46:22 for SSH
+2024-12-25T01:44:50.605+0530 [DEBUG] Connection established. Handshaking for user msis
+2024-12-25T01:44:50.605+0530 [DEBUG] Connection established. Handshaking for user msis
+2024-12-25T01:44:50.653+0530 [DEBUG] Telling SSH config to forward to agent
+2024-12-25T01:44:50.653+0530 [DEBUG] Setting up a session to request agent forwarding
+2024-12-25T01:44:50.654+0530 [DEBUG] Telling SSH config to forward to agent
+2024-12-25T01:44:50.654+0530 [DEBUG] Setting up a session to request agent forwarding
+2024-12-25T01:44:50.748+0530 [INFO]  agent forwarding enabled
+2024-12-25T01:44:50.748+0530 [DEBUG] starting ssh KeepAlives
+2024-12-25T01:44:50.748+0530 [DEBUG] Uploading dir './mompopcafe' to '/tmp/mompopcafe'
+2024-12-25T01:44:50.748+0530 [DEBUG] opening new ssh session
+2024-12-25T01:44:50.774+0530 [INFO]  agent forwarding enabled
+2024-12-25T01:44:50.774+0530 [DEBUG] starting ssh KeepAlives
+2024-12-25T01:44:50.774+0530 [DEBUG] Uploading dir './mompopcafe' to '/tmp/mompopcafe'
+2024-12-25T01:44:50.774+0530 [DEBUG] opening new ssh session
+2024-12-25T01:44:50.789+0530 [DEBUG] Starting remote scp process:  'scp' -rvt /tmp/mompopcafe
+2024-12-25T01:44:50.790+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T01:44:50.790+0530 [DEBUG] No trailing slash, creating the source directory name
+2024-12-25T01:44:50.790+0530 [DEBUG] SCP: starting directory upload: mompopcafe
+2024-12-25T01:44:50.796+0530 [DEBUG] SCP: starting directory upload: images
+2024-12-25T01:44:50.796+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:50.815+0530 [DEBUG] Starting remote scp process:  'scp' -rvt /tmp/mompopcafe
+2024-12-25T01:44:50.816+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T01:44:50.816+0530 [DEBUG] No trailing slash, creating the source directory name
+2024-12-25T01:44:50.816+0530 [DEBUG] SCP: starting directory upload: mompopcafe
+2024-12-25T01:44:50.821+0530 [DEBUG] SCP: starting directory upload: images
+2024-12-25T01:44:50.838+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:50.859+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:50.868+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:50.874+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:50.883+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:50.913+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:50.948+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:50.976+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.008+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.013+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.039+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.052+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.078+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.090+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.126+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.149+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.176+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.202+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.233+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.259+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.266+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.304+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.332+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.351+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.370+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.419+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.420+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.474+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.484+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.508+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.508+0530 [DEBUG] SCP: starting directory upload: AWSSDK
+2024-12-25T01:44:51.509+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.562+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.636+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.665+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.674+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.677+0530 [DEBUG] SCP: starting directory upload: AWSSDK
+2024-12-25T01:44:51.677+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.706+0530 [DEBUG] SCP: starting directory upload: css
+2024-12-25T01:44:51.706+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.706+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.707+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.708+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.708+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.709+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.709+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T01:44:51.709+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T01:44:51.712+0530 [ERROR] scp stderr: "Sink: D0755 0 mompopcafe\nSink: D0755 0 images\nSink: C0644 3275378 Coffee-and-Pastries.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 1494128 Cookies.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3393260 Donuts.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 4029565 Chocolate-Chip-Cookies.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 564440 default-image.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3262031 Latte.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 2864098 Mom-&-Pop.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3012481 Muffins.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3090387 Strawberry-&-Blueberry-Tarts.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3762806 Cup-of-Hot-Chocolate.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 744262 Mom-&-Pop-Coffee-Shop.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3932543 Cake-Vitrine.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 2812000 Croissants.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 4749304 Coffee.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3615146 Strawberry-Tarts.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: E\nSink: C0644 3869 processOrder.php\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3438 orderHistory.php\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: D0755 0 AWSSDK\nSink: C0644 13098916 aws.phar\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: E\nSink: C0644 5021 menu.php\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: D0755 0 css\nSink: C0644 1190 menu.css\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 1327 styles.css\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: E\nSink: C0644 436 getAppParameters.php\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3476 index.php\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 615 serverInfo.php\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 207 Dockerfile\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: E\n"
+2024-12-25T01:44:51.713+0530 [INFO]  using private key for authentication
+2024-12-25T01:44:51.713+0530 [DEBUG] Connecting to 172.16.51.54:22 for SSH
+2024-12-25T01:44:51.714+0530 [DEBUG] Connection established. Handshaking for user msis
+2024-12-25T01:44:51.783+0530 [DEBUG] Telling SSH config to forward to agent
+2024-12-25T01:44:51.783+0530 [DEBUG] Setting up a session to request agent forwarding
+2024-12-25T01:44:51.787+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.817+0530 [DEBUG] SCP: starting directory upload: css
+2024-12-25T01:44:51.817+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.834+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.834+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.835+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.835+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.835+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.836+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T01:44:51.836+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T01:44:51.838+0530 [ERROR] scp stderr: "Sink: D0755 0 mompopcafe\nSink: D0755 0 images\nSink: C0644 3275378 Coffee-and-Pastries.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 1494128 Cookies.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3393260 Donuts.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 4029565 Chocolate-Chip-Cookies.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 564440 default-image.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3262031 Latte.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 2864098 Mom-&-Pop.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3012481 Muffins.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3090387 Strawberry-&-Blueberry-Tarts.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3762806 Cup-of-Hot-Chocolate.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 744262 Mom-&-Pop-Coffee-Shop.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3932543 Cake-Vitrine.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 2812000 Croissants.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 4749304 Coffee.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3615146 Strawberry-Tarts.png\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: E\nSink: C0644 3869 processOrder.php\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3438 orderHistory.php\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: D0755 0 AWSSDK\nSink: C0644 13098916 aws.phar\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: E\nSink: C0644 5021 menu.php\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: D0755 0 css\nSink: C0644 1190 menu.css\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 1327 styles.css\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: E\nSink: C0644 436 getAppParameters.php\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 3476 index.php\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 615 serverInfo.php\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 207 Dockerfile\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: E\n"
+2024-12-25T01:44:51.839+0530 [INFO]  using private key for authentication
+2024-12-25T01:44:51.839+0530 [DEBUG] Connecting to 172.16.51.46:22 for SSH
+2024-12-25T01:44:51.839+0530 [DEBUG] Connection established. Handshaking for user msis
+2024-12-25T01:44:51.896+0530 [DEBUG] Telling SSH config to forward to agent
+2024-12-25T01:44:51.896+0530 [DEBUG] Setting up a session to request agent forwarding
+2024-12-25T01:44:51.906+0530 [INFO]  agent forwarding enabled
+2024-12-25T01:44:51.906+0530 [DEBUG] starting ssh KeepAlives
+2024-12-25T01:44:51.907+0530 [DEBUG] Uploading dir './mompopdb' to '/tmp/mompopdb'
+2024-12-25T01:44:51.907+0530 [DEBUG] opening new ssh session
+2024-12-25T01:44:51.948+0530 [DEBUG] Starting remote scp process:  'scp' -rvt /tmp/mompopdb
+2024-12-25T01:44:51.950+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T01:44:51.950+0530 [DEBUG] No trailing slash, creating the source directory name
+2024-12-25T01:44:51.950+0530 [DEBUG] SCP: starting directory upload: mompopdb
+2024-12-25T01:44:51.955+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.956+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.956+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.957+0530 [DEBUG] SCP: starting directory upload: sql
+2024-12-25T01:44:51.957+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.958+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.958+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:51.958+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T01:44:51.958+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T01:44:51.959+0530 [ERROR] scp stderr: "Sink: D0755 0 mompopdb\nSink: C0644 371 create-db.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 406 set-root-password.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 2665 create-db.sql\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: D0755 0 sql\nSink: C0644 151 set-root-password.sql\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 2665 create-db.sql\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: E\nSink: C0644 130 Dockerfile\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: E\n"
+2024-12-25T01:44:51.961+0530 [INFO]  using private key for authentication
+2024-12-25T01:44:51.962+0530 [DEBUG] Connecting to 172.16.51.54:22 for SSH
+2024-12-25T01:44:51.962+0530 [DEBUG] Connection established. Handshaking for user msis
+2024-12-25T01:44:52.003+0530 [INFO]  agent forwarding enabled
+2024-12-25T01:44:52.003+0530 [DEBUG] starting ssh KeepAlives
+2024-12-25T01:44:52.003+0530 [DEBUG] Uploading dir './mompopdb' to '/tmp/mompopdb'
+2024-12-25T01:44:52.003+0530 [DEBUG] opening new ssh session
+2024-12-25T01:44:52.014+0530 [DEBUG] Telling SSH config to forward to agent
+2024-12-25T01:44:52.014+0530 [DEBUG] Setting up a session to request agent forwarding
+2024-12-25T01:44:52.044+0530 [DEBUG] Starting remote scp process:  'scp' -rvt /tmp/mompopdb
+2024-12-25T01:44:52.046+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T01:44:52.046+0530 [DEBUG] No trailing slash, creating the source directory name
+2024-12-25T01:44:52.046+0530 [DEBUG] SCP: starting directory upload: mompopdb
+2024-12-25T01:44:52.051+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:52.052+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:52.064+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:52.070+0530 [DEBUG] SCP: starting directory upload: sql
+2024-12-25T01:44:52.072+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:52.073+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:52.073+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:52.074+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T01:44:52.074+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T01:44:52.076+0530 [ERROR] scp stderr: "Sink: D0755 0 mompopdb\nSink: C0644 371 create-db.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 406 set-root-password.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 2665 create-db.sql\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: D0755 0 sql\nSink: C0644 151 set-root-password.sql\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: C0644 2665 create-db.sql\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: E\nSink: C0644 130 Dockerfile\nscp: debug1: fd 0 clearing O_NONBLOCK\r\nSink: E\n"
+2024-12-25T01:44:52.078+0530 [INFO]  using private key for authentication
+2024-12-25T01:44:52.079+0530 [DEBUG] Connecting to 172.16.51.46:22 for SSH
+2024-12-25T01:44:52.079+0530 [DEBUG] Connection established. Handshaking for user msis
+2024-12-25T01:44:52.136+0530 [DEBUG] Telling SSH config to forward to agent
+2024-12-25T01:44:52.136+0530 [DEBUG] Setting up a session to request agent forwarding
+2024-12-25T01:44:52.137+0530 [INFO]  agent forwarding enabled
+2024-12-25T01:44:52.137+0530 [DEBUG] starting ssh KeepAlives
+2024-12-25T01:44:52.137+0530 [DEBUG] opening new ssh session
+2024-12-25T01:44:52.178+0530 [DEBUG] Starting remote scp process:  'scp' -vt /tmp
+2024-12-25T01:44:52.179+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T01:44:52.179+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:52.184+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T01:44:52.184+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T01:44:52.201+0530 [ERROR] scp stderr: "Sink: C0644 876 docker-compose.yml\nscp: debug1: fd 0 clearing O_NONBLOCK\r\n"
+2024-12-25T01:44:52.203+0530 [INFO]  using private key for authentication
+2024-12-25T01:44:52.204+0530 [DEBUG] Connecting to 172.16.51.54:22 for SSH
+2024-12-25T01:44:52.204+0530 [DEBUG] Connection established. Handshaking for user msis
+2024-12-25T01:44:52.244+0530 [INFO]  agent forwarding enabled
+2024-12-25T01:44:52.244+0530 [DEBUG] starting ssh KeepAlives
+2024-12-25T01:44:52.245+0530 [DEBUG] opening new ssh session
+2024-12-25T01:44:52.249+0530 [DEBUG] Telling SSH config to forward to agent
+2024-12-25T01:44:52.249+0530 [DEBUG] Setting up a session to request agent forwarding
+2024-12-25T01:44:52.286+0530 [DEBUG] Starting remote scp process:  'scp' -vt /tmp
+2024-12-25T01:44:52.287+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T01:44:52.287+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:52.292+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T01:44:52.293+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T01:44:52.319+0530 [ERROR] scp stderr: "Sink: C0644 876 docker-compose.yml\nscp: debug1: fd 0 clearing O_NONBLOCK\r\n"
+2024-12-25T01:44:52.321+0530 [INFO]  using private key for authentication
+2024-12-25T01:44:52.321+0530 [DEBUG] Connecting to 172.16.51.46:22 for SSH
+2024-12-25T01:44:52.322+0530 [DEBUG] Connection established. Handshaking for user msis
+2024-12-25T01:44:52.349+0530 [INFO]  agent forwarding enabled
+2024-12-25T01:44:52.349+0530 [DEBUG] starting ssh KeepAlives
+2024-12-25T01:44:52.349+0530 [DEBUG] opening new ssh session
+2024-12-25T01:44:52.381+0530 [DEBUG] Telling SSH config to forward to agent
+2024-12-25T01:44:52.381+0530 [DEBUG] Setting up a session to request agent forwarding
+2024-12-25T01:44:52.390+0530 [DEBUG] Starting remote scp process:  'scp' -vt /tmp
+2024-12-25T01:44:52.392+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T01:44:52.392+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:52.397+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T01:44:52.397+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T01:44:52.398+0530 [ERROR] scp stderr: "Sink: C0644 221 terraform_1800377675.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\n"
+2024-12-25T01:44:52.398+0530 [DEBUG] opening new ssh session
+2024-12-25T01:44:52.400+0530 [DEBUG] starting remote command: chmod 0777 /tmp/terraform_1800377675.sh
+2024-12-25T01:44:52.404+0530 [DEBUG] remote command exited with '0': chmod 0777 /tmp/terraform_1800377675.sh
+2024-12-25T01:44:52.404+0530 [DEBUG] opening new ssh session
+2024-12-25T01:44:52.405+0530 [DEBUG] starting remote command: /tmp/terraform_1800377675.sh
+2024-12-25T01:44:52.493+0530 [INFO]  agent forwarding enabled
+2024-12-25T01:44:52.493+0530 [DEBUG] starting ssh KeepAlives
+2024-12-25T01:44:52.493+0530 [DEBUG] opening new ssh session
+2024-12-25T01:44:52.534+0530 [DEBUG] Starting remote scp process:  'scp' -vt /tmp
+2024-12-25T01:44:52.535+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T01:44:52.535+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:44:52.541+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T01:44:52.541+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T01:44:52.542+0530 [ERROR] scp stderr: "Sink: C0644 221 terraform_1300001203.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\n"
+2024-12-25T01:44:52.542+0530 [DEBUG] opening new ssh session
+2024-12-25T01:44:52.543+0530 [DEBUG] starting remote command: chmod 0777 /tmp/terraform_1300001203.sh
+2024-12-25T01:44:52.547+0530 [DEBUG] remote command exited with '0': chmod 0777 /tmp/terraform_1300001203.sh
+2024-12-25T01:44:52.547+0530 [DEBUG] opening new ssh session
+2024-12-25T01:44:52.548+0530 [DEBUG] starting remote command: /tmp/terraform_1300001203.sh
+2024-12-25T01:45:00.546+0530 [DEBUG] remote command exited with '0': /tmp/terraform_1800377675.sh
+2024-12-25T01:45:00.546+0530 [DEBUG] opening new ssh session
+2024-12-25T01:45:00.547+0530 [DEBUG] Starting remote scp process:  'scp' -vt /tmp
+2024-12-25T01:45:00.548+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T01:45:00.548+0530 [DEBUG] Copying input data into temporary file so we can read the length
+2024-12-25T01:45:00.572+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:45:00.574+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T01:45:00.574+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T01:45:00.576+0530 [ERROR] scp stderr: "Sink: C0644 0 terraform_1800377675.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\n"
+2024-12-25T01:45:00.623+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2024-12-25T01:45:02.340+0530 [DEBUG] remote command exited with '0': /tmp/terraform_1300001203.sh
+2024-12-25T01:45:02.340+0530 [DEBUG] opening new ssh session
+2024-12-25T01:45:02.340+0530 [DEBUG] Starting remote scp process:  'scp' -vt /tmp
+2024-12-25T01:45:02.341+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T01:45:02.341+0530 [DEBUG] Copying input data into temporary file so we can read the length
+2024-12-25T01:45:02.366+0530 [DEBUG] Beginning file upload...
+2024-12-25T01:45:02.367+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T01:45:02.367+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T01:45:02.368+0530 [ERROR] scp stderr: "Sink: C0644 0 terraform_1300001203.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\n"
+2024-12-25T01:45:02.429+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2024-12-25T01:45:02.430+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T01:45:02.432+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 id=1258394
+2024-12-25T01:45:02.432+0530 [DEBUG] provider: plugin exited
+2024-12-25T02:06:29.388+0530 [INFO]  Terraform version: 1.10.3
+2024-12-25T02:06:29.388+0530 [DEBUG] using github.com/hashicorp/go-tfe v1.70.0
+2024-12-25T02:06:29.388+0530 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.0
+2024-12-25T02:06:29.388+0530 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2024-12-25T02:06:29.388+0530 [DEBUG] using github.com/zclconf/go-cty v1.15.1-0.20241111215639-63279be090d7
+2024-12-25T02:06:29.388+0530 [INFO]  Go runtime version: go1.23.3
+2024-12-25T02:06:29.388+0530 [INFO]  CLI args: []string{"terraform", "apply"}
+2024-12-25T02:06:29.388+0530 [DEBUG] Attempting to open CLI config file: /home/msis/.terraformrc
+2024-12-25T02:06:29.388+0530 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2024-12-25T02:06:29.388+0530 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2024-12-25T02:06:29.388+0530 [DEBUG] ignoring non-existing provider search directory /home/msis/.terraform.d/plugins
+2024-12-25T02:06:29.388+0530 [DEBUG] ignoring non-existing provider search directory /home/msis/.local/share/terraform/plugins
+2024-12-25T02:06:29.388+0530 [DEBUG] ignoring non-existing provider search directory /usr/share/gnome/terraform/plugins
+2024-12-25T02:06:29.388+0530 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2024-12-25T02:06:29.388+0530 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2024-12-25T02:06:29.388+0530 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2024-12-25T02:06:29.388+0530 [INFO]  CLI command args: []string{"apply"}
+2024-12-25T02:06:29.471+0530 [DEBUG] checking for provisioner in "."
+2024-12-25T02:06:29.475+0530 [DEBUG] checking for provisioner in "/usr/bin"
+2024-12-25T02:06:29.477+0530 [INFO]  backend/local: starting Apply operation
+2024-12-25T02:06:29.478+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T02:06:29.478+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T02:06:29.490+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5"]
+2024-12-25T02:06:29.490+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 pid=1261724
+2024-12-25T02:06:29.490+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5
+2024-12-25T02:06:29.494+0530 [INFO]  provider.terraform-provider-null_v3.2.3_x5: configuring server automatic mTLS: timestamp="2024-12-25T02:06:29.494+0530"
+2024-12-25T02:06:29.506+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T02:06:29.506+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: plugin address: address=/tmp/plugin1903287108 network=unix timestamp="2024-12-25T02:06:29.505+0530"
+2024-12-25T02:06:29.516+0530 [DEBUG] No provider meta schema returned
+2024-12-25T02:06:29.516+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T02:06:29.517+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 id=1261724
+2024-12-25T02:06:29.517+0530 [DEBUG] provider: plugin exited
+2024-12-25T02:06:29.517+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T02:06:29.517+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T02:06:29.522+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0 args=[".terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0"]
+2024-12-25T02:06:29.522+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0 pid=1261732
+2024-12-25T02:06:29.522+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0
+2024-12-25T02:06:29.527+0530 [INFO]  provider.terraform-provider-ssh_v2.7.0: configuring server automatic mTLS: timestamp="2024-12-25T02:06:29.526+0530"
+2024-12-25T02:06:29.538+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T02:06:29.538+0530 [DEBUG] provider.terraform-provider-ssh_v2.7.0: plugin address: address=/tmp/plugin548707802 network=unix timestamp="2024-12-25T02:06:29.538+0530"
+2024-12-25T02:06:29.548+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T02:06:29.549+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0 id=1261732
+2024-12-25T02:06:29.549+0530 [DEBUG] provider: plugin exited
+2024-12-25T02:06:29.549+0530 [DEBUG] Building and walking validate graph
+2024-12-25T02:06:29.550+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:29.550+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:29.550+0530 [DEBUG] pruning unused provider["registry.terraform.io/loafoe/ssh"]
+2024-12-25T02:06:29.550+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T02:06:29.550+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T02:06:29.550+0530 [DEBUG] ReferenceTransformer: "var.worker_ips" references: []
+2024-12-25T02:06:29.550+0530 [DEBUG] ReferenceTransformer: "var.ssh_user" references: []
+2024-12-25T02:06:29.550+0530 [DEBUG] ReferenceTransformer: "var.ssh_private_key" references: []
+2024-12-25T02:06:29.550+0530 [DEBUG] ReferenceTransformer: "output.docker_status (expand)" references: []
+2024-12-25T02:06:29.550+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/null\"]" references: []
+2024-12-25T02:06:29.550+0530 [DEBUG] Starting graph walk: walkValidate
+2024-12-25T02:06:29.550+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T02:06:29.551+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T02:06:29.555+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5"]
+2024-12-25T02:06:29.556+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 pid=1261741
+2024-12-25T02:06:29.556+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5
+2024-12-25T02:06:29.559+0530 [INFO]  provider.terraform-provider-null_v3.2.3_x5: configuring server automatic mTLS: timestamp="2024-12-25T02:06:29.559+0530"
+2024-12-25T02:06:29.571+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T02:06:29.571+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: plugin address: address=/tmp/plugin3466098374 network=unix timestamp="2024-12-25T02:06:29.571+0530"
+2024-12-25T02:06:29.582+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T02:06:29.582+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 id=1261741
+2024-12-25T02:06:29.582+0530 [DEBUG] provider: plugin exited
+2024-12-25T02:06:29.583+0530 [INFO]  backend/local: apply calling Plan
+2024-12-25T02:06:29.583+0530 [DEBUG] Building and walking plan graph for NormalMode
+2024-12-25T02:06:29.583+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:29.583+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:29.584+0530 [DEBUG] pruning unused provider["registry.terraform.io/loafoe/ssh"]
+2024-12-25T02:06:29.584+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/null\"]" references: []
+2024-12-25T02:06:29.584+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker (expand)" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T02:06:29.584+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app (expand)" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T02:06:29.584+0530 [DEBUG] ReferenceTransformer: "var.worker_ips" references: []
+2024-12-25T02:06:29.584+0530 [DEBUG] ReferenceTransformer: "var.ssh_user" references: []
+2024-12-25T02:06:29.584+0530 [DEBUG] ReferenceTransformer: "var.ssh_private_key" references: []
+2024-12-25T02:06:29.584+0530 [DEBUG] ReferenceTransformer: "output.docker_status (expand)" references: []
+2024-12-25T02:06:29.585+0530 [DEBUG] Starting graph walk: walkPlan
+2024-12-25T02:06:29.585+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T02:06:29.585+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T02:06:29.590+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5"]
+2024-12-25T02:06:29.590+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 pid=1261750
+2024-12-25T02:06:29.590+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5
+2024-12-25T02:06:29.593+0530 [INFO]  provider.terraform-provider-null_v3.2.3_x5: configuring server automatic mTLS: timestamp="2024-12-25T02:06:29.593+0530"
+2024-12-25T02:06:29.605+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T02:06:29.605+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: plugin address: network=unix address=/tmp/plugin160338047 timestamp="2024-12-25T02:06:29.605+0530"
+2024-12-25T02:06:29.615+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker[\"172.16.51.46\"]" references: []
+2024-12-25T02:06:29.615+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker[\"172.16.51.54\"]" references: []
+2024-12-25T02:06:29.615+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.46\"]" references: []
+2024-12-25T02:06:29.616+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.54\"]" references: []
+2024-12-25T02:06:29.617+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Value switched to prior value due to semantic equality logic: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=1203e435-5509-606f-3f71-0bfd3c484d13 tf_rpc=ReadResource @module=sdk.framework tf_attribute_path=id tf_resource_type=null_resource timestamp="2024-12-25T02:06:29.617+0530"
+2024-12-25T02:06:29.617+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Value switched to prior value due to semantic equality logic: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 tf_attribute_path=id tf_req_id=3c1fd357-0b67-e49a-9cb4-57f232ed382c tf_resource_type=null_resource tf_rpc=ReadResource @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null timestamp="2024-12-25T02:06:29.617+0530"
+2024-12-25T02:06:29.618+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Value switched to prior value due to semantic equality logic: tf_resource_type=null_resource @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 tf_rpc=ReadResource @module=sdk.framework tf_attribute_path=id tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=4afd1dde-ee2d-f57b-e648-36a899b01181 timestamp="2024-12-25T02:06:29.618+0530"
+2024-12-25T02:06:29.618+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Value switched to prior value due to semantic equality logic: tf_attribute_path=id tf_req_id=37811e53-1373-c1a3-30d7-18c8758b3b65 tf_resource_type=null_resource @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null tf_rpc=ReadResource @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwschemadata/value_semantic_equality.go:91 timestamp="2024-12-25T02:06:29.618+0530"
+2024-12-25T02:06:29.621+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=2aa03dd9-b6d1-82d9-b8f5-3d2f2620a9e9 tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 @module=sdk.framework tf_resource_type=null_resource timestamp="2024-12-25T02:06:29.620+0530"
+2024-12-25T02:06:29.621+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: @module=sdk.framework tf_req_id=2aa03dd9-b6d1-82d9-b8f5-3d2f2620a9e9 tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 tf_attribute_path="AttributeName(\"id\")" tf_provider_addr=registry.terraform.io/hashicorp/null tf_resource_type=null_resource timestamp="2024-12-25T02:06:29.620+0530"
+2024-12-25T02:06:29.621+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: @module=sdk.framework tf_req_id=b8e63d58-ecfd-db8e-0f27-06acdaa479b7 tf_resource_type=null_resource tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 tf_provider_addr=registry.terraform.io/hashicorp/null timestamp="2024-12-25T02:06:29.620+0530"
+2024-12-25T02:06:29.621+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: tf_attribute_path="AttributeName(\"id\")" tf_req_id=b8e63d58-ecfd-db8e-0f27-06acdaa479b7 tf_rpc=PlanResourceChange @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null tf_resource_type=null_resource @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 timestamp="2024-12-25T02:06:29.620+0530"
+2024-12-25T02:06:29.621+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 tf_req_id=6c063e64-4e2d-f643-d022-d8777064295c tf_rpc=PlanResourceChange @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null tf_resource_type=null_resource timestamp="2024-12-25T02:06:29.620+0530"
+2024-12-25T02:06:29.621+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: tf_attribute_path="AttributeName(\"id\")" tf_req_id=6c063e64-4e2d-f643-d022-d8777064295c tf_provider_addr=registry.terraform.io/hashicorp/null tf_resource_type=null_resource tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 @module=sdk.framework timestamp="2024-12-25T02:06:29.620+0530"
+2024-12-25T02:06:29.622+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T02:06:29.622+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: tf_resource_type=null_resource tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=7a420cab-f1de-e4f4-6632-039a738e7977 timestamp="2024-12-25T02:06:29.621+0530"
+2024-12-25T02:06:29.622+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: @module=sdk.framework tf_attribute_path="AttributeName(\"id\")" tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=7a420cab-f1de-e4f4-6632-039a738e7977 tf_resource_type=null_resource tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 timestamp="2024-12-25T02:06:29.621+0530"
+2024-12-25T02:06:29.623+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 id=1261750
+2024-12-25T02:06:29.623+0530 [DEBUG] provider: plugin exited
+2024-12-25T02:06:29.623+0530 [DEBUG] building apply graph to check for errors
+2024-12-25T02:06:29.624+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.46\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:29.624+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker[\"172.16.51.54\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:29.624+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker[\"172.16.51.54\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:29.624+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:29.624+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.54\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:29.624+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker[\"172.16.51.46\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:29.624+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.54\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:29.624+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.46\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:29.624+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:29.624+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker[\"172.16.51.46\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:29.624+0530 [DEBUG] pruning unused provider["registry.terraform.io/loafoe/ssh"]
+2024-12-25T02:06:29.624+0530 [DEBUG] ReferenceTransformer: "var.ssh_user" references: []
+2024-12-25T02:06:29.624+0530 [DEBUG] ReferenceTransformer: "var.worker_ips" references: []
+2024-12-25T02:06:29.624+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.46\"]" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T02:06:29.624+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker (expand)" references: [var.worker_ips var.ssh_user var.ssh_private_key]
+2024-12-25T02:06:29.624+0530 [DEBUG] ReferenceTransformer: "output.docker_status (expand)" references: []
+2024-12-25T02:06:29.624+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker[\"172.16.51.54\"]" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T02:06:29.624+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app (expand)" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T02:06:29.624+0530 [DEBUG] ReferenceTransformer: "var.ssh_private_key" references: []
+2024-12-25T02:06:29.624+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.54\"]" references: [var.worker_ips var.ssh_user var.ssh_private_key]
+2024-12-25T02:06:29.624+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/null\"]" references: []
+2024-12-25T02:06:29.624+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker[\"172.16.51.46\"]" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T02:06:29.626+0530 [DEBUG] command: asking for input: "\nDo you want to perform these actions?"
+2024-12-25T02:06:31.340+0530 [INFO]  backend/local: apply calling Apply
+2024-12-25T02:06:31.340+0530 [DEBUG] Building and walking apply graph for NormalMode plan
+2024-12-25T02:06:31.342+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker[\"172.16.51.46\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:31.342+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker[\"172.16.51.46\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:31.342+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:31.342+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.54\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:31.342+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.46\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:31.342+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.46\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:31.342+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app[\"172.16.51.54\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:31.343+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker[\"172.16.51.54\"]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:31.343+0530 [DEBUG] ProviderTransformer: "null_resource.install_docker[\"172.16.51.54\"] (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:31.343+0530 [DEBUG] ProviderTransformer: "null_resource.deploy_app (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/null"]
+2024-12-25T02:06:31.343+0530 [DEBUG] pruning unused provider["registry.terraform.io/loafoe/ssh"]
+2024-12-25T02:06:31.344+0530 [DEBUG] ReferenceTransformer: "output.docker_status (expand)" references: []
+2024-12-25T02:06:31.344+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker[\"172.16.51.54\"]" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T02:06:31.344+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker (expand)" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T02:06:31.345+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app (expand)" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T02:06:31.345+0530 [DEBUG] ReferenceTransformer: "var.ssh_private_key" references: []
+2024-12-25T02:06:31.345+0530 [DEBUG] ReferenceTransformer: "var.worker_ips" references: []
+2024-12-25T02:06:31.345+0530 [DEBUG] ReferenceTransformer: "null_resource.install_docker[\"172.16.51.46\"]" references: [var.worker_ips var.ssh_user var.ssh_private_key]
+2024-12-25T02:06:31.345+0530 [DEBUG] ReferenceTransformer: "var.ssh_user" references: []
+2024-12-25T02:06:31.345+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.54\"]" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T02:06:31.345+0530 [DEBUG] ReferenceTransformer: "null_resource.deploy_app[\"172.16.51.46\"]" references: [var.worker_ips var.ssh_private_key var.ssh_user]
+2024-12-25T02:06:31.345+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/null\"]" references: []
+2024-12-25T02:06:31.348+0530 [DEBUG] Starting graph walk: walkApply
+2024-12-25T02:06:31.348+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T02:06:31.348+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T02:06:31.353+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5"]
+2024-12-25T02:06:31.353+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 pid=1261759
+2024-12-25T02:06:31.353+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5
+2024-12-25T02:06:31.357+0530 [INFO]  provider.terraform-provider-null_v3.2.3_x5: configuring server automatic mTLS: timestamp="2024-12-25T02:06:31.357+0530"
+2024-12-25T02:06:31.369+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T02:06:31.369+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: plugin address: address=/tmp/plugin1490846083 network=unix timestamp="2024-12-25T02:06:31.369+0530"
+2024-12-25T02:06:31.380+0530 [INFO]  Starting apply for null_resource.deploy_app["172.16.51.46"]
+2024-12-25T02:06:31.380+0530 [DEBUG] null_resource.deploy_app["172.16.51.46"]: applying the planned Delete change
+2024-12-25T02:06:31.380+0530 [INFO]  Starting apply for null_resource.install_docker["172.16.51.54"]
+2024-12-25T02:06:31.380+0530 [INFO]  Starting apply for null_resource.install_docker["172.16.51.46"]
+2024-12-25T02:06:31.380+0530 [DEBUG] null_resource.install_docker["172.16.51.46"]: applying the planned Delete change
+2024-12-25T02:06:31.380+0530 [INFO]  Starting apply for null_resource.deploy_app["172.16.51.54"]
+2024-12-25T02:06:31.380+0530 [DEBUG] null_resource.install_docker["172.16.51.54"]: applying the planned Delete change
+2024-12-25T02:06:31.380+0530 [DEBUG] null_resource.deploy_app["172.16.51.54"]: applying the planned Delete change
+2024-12-25T02:06:31.438+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2024-12-25T02:06:31.472+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2024-12-25T02:06:31.476+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=ccd2aad8-0324-c0df-2848-170f2580dfe8 tf_resource_type=null_resource @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 @module=sdk.framework tf_rpc=PlanResourceChange timestamp="2024-12-25T02:06:31.476+0530"
+2024-12-25T02:06:31.476+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 tf_attribute_path="AttributeName(\"id\")" tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=ccd2aad8-0324-c0df-2848-170f2580dfe8 tf_rpc=PlanResourceChange @module=sdk.framework tf_resource_type=null_resource timestamp="2024-12-25T02:06:31.476+0530"
+2024-12-25T02:06:31.476+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: tf_resource_type=null_resource tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=ea16ee3a-a6d3-6068-6ab1-e93390f3e603 timestamp="2024-12-25T02:06:31.476+0530"
+2024-12-25T02:06:31.476+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: tf_attribute_path="AttributeName(\"id\")" tf_req_id=ea16ee3a-a6d3-6068-6ab1-e93390f3e603 tf_resource_type=null_resource tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null timestamp="2024-12-25T02:06:31.476+0530"
+2024-12-25T02:06:31.477+0530 [INFO]  Starting apply for null_resource.install_docker["172.16.51.54"]
+2024-12-25T02:06:31.478+0530 [INFO]  Starting apply for null_resource.deploy_app["172.16.51.46"]
+2024-12-25T02:06:31.478+0530 [DEBUG] null_resource.install_docker["172.16.51.54"]: applying the planned Create change
+2024-12-25T02:06:31.478+0530 [DEBUG] null_resource.deploy_app["172.16.51.46"]: applying the planned Create change
+2024-12-25T02:06:31.514+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2024-12-25T02:06:31.516+0530 [INFO]  using private key for authentication
+2024-12-25T02:06:31.516+0530 [INFO]  using private key for authentication
+2024-12-25T02:06:31.517+0530 [DEBUG] Connecting to 172.16.51.54:22 for SSH
+2024-12-25T02:06:31.517+0530 [DEBUG] Connecting to 172.16.51.46:22 for SSH
+2024-12-25T02:06:31.517+0530 [DEBUG] Connection established. Handshaking for user msis
+2024-12-25T02:06:31.517+0530 [DEBUG] Connection established. Handshaking for user msis
+2024-12-25T02:06:31.564+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2024-12-25T02:06:31.566+0530 [DEBUG] starting ssh KeepAlives
+2024-12-25T02:06:31.566+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:31.567+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: tf_req_id=85a20161-d47e-4787-bac4-8a8c1d217f52 tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null tf_resource_type=null_resource timestamp="2024-12-25T02:06:31.567+0530"
+2024-12-25T02:06:31.567+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=85a20161-d47e-4787-bac4-8a8c1d217f52 tf_resource_type=null_resource @module=sdk.framework tf_attribute_path="AttributeName(\"id\")" timestamp="2024-12-25T02:06:31.567+0530"
+2024-12-25T02:06:31.567+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: Marking Computed attributes with null configuration values as unknown (known after apply) in the plan to prevent potential Terraform errors: tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:217 tf_provider_addr=registry.terraform.io/hashicorp/null tf_req_id=af32a86a-84fc-2d33-5d0a-5b5dd3ce93d8 tf_resource_type=null_resource @module=sdk.framework timestamp="2024-12-25T02:06:31.567+0530"
+2024-12-25T02:06:31.567+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: marking computed attribute that is null in the config as unknown: tf_attribute_path="AttributeName(\"id\")" tf_req_id=af32a86a-84fc-2d33-5d0a-5b5dd3ce93d8 tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-framework@v1.11.0/internal/fwserver/server_planresourcechange.go:467 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/null tf_resource_type=null_resource timestamp="2024-12-25T02:06:31.567+0530"
+2024-12-25T02:06:31.568+0530 [DEBUG] starting ssh KeepAlives
+2024-12-25T02:06:31.568+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:31.568+0530 [INFO]  Starting apply for null_resource.install_docker["172.16.51.46"]
+2024-12-25T02:06:31.568+0530 [INFO]  Starting apply for null_resource.deploy_app["172.16.51.54"]
+2024-12-25T02:06:31.569+0530 [DEBUG] null_resource.install_docker["172.16.51.46"]: applying the planned Create change
+2024-12-25T02:06:31.569+0530 [DEBUG] null_resource.deploy_app["172.16.51.54"]: applying the planned Create change
+2024-12-25T02:06:31.572+0530 [INFO]  using private key for authentication
+2024-12-25T02:06:31.573+0530 [INFO]  using private key for authentication
+2024-12-25T02:06:31.573+0530 [DEBUG] Connecting to 172.16.51.54:22 for SSH
+2024-12-25T02:06:31.574+0530 [DEBUG] Connecting to 172.16.51.46:22 for SSH
+2024-12-25T02:06:31.575+0530 [DEBUG] Connection established. Handshaking for user msis
+2024-12-25T02:06:31.575+0530 [DEBUG] Connection established. Handshaking for user msis
+2024-12-25T02:06:31.624+0530 [DEBUG] starting ssh KeepAlives
+2024-12-25T02:06:31.624+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:31.636+0530 [DEBUG] starting ssh KeepAlives
+2024-12-25T02:06:31.636+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:31.658+0530 [DEBUG] Starting remote scp process:  'scp' -vt /tmp
+2024-12-25T02:06:31.659+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T02:06:31.659+0530 [DEBUG] Beginning file upload...
+2024-12-25T02:06:31.664+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T02:06:31.664+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T02:06:31.666+0530 [ERROR] scp stderr: "Sink: C0644 318 terraform_1315046294.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\n"
+2024-12-25T02:06:31.666+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:31.667+0530 [DEBUG] starting remote command: chmod 0777 /tmp/terraform_1315046294.sh
+2024-12-25T02:06:31.671+0530 [DEBUG] remote command exited with '0': chmod 0777 /tmp/terraform_1315046294.sh
+2024-12-25T02:06:31.671+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:31.672+0530 [DEBUG] starting remote command: /tmp/terraform_1315046294.sh
+2024-12-25T02:06:31.681+0530 [DEBUG] Starting remote scp process:  'scp' -vt /tmp
+2024-12-25T02:06:31.682+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T02:06:31.682+0530 [DEBUG] Beginning file upload...
+2024-12-25T02:06:31.688+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T02:06:31.688+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T02:06:31.689+0530 [ERROR] scp stderr: "Sink: C0644 825 terraform_1847192926.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\n"
+2024-12-25T02:06:31.689+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:31.690+0530 [DEBUG] starting remote command: chmod 0777 /tmp/terraform_1847192926.sh
+2024-12-25T02:06:31.693+0530 [DEBUG] remote command exited with '0': chmod 0777 /tmp/terraform_1847192926.sh
+2024-12-25T02:06:31.693+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:31.694+0530 [DEBUG] starting remote command: /tmp/terraform_1847192926.sh
+2024-12-25T02:06:31.711+0530 [DEBUG] Starting remote scp process:  'scp' -vt /tmp
+2024-12-25T02:06:31.712+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T02:06:31.712+0530 [DEBUG] Beginning file upload...
+2024-12-25T02:06:31.718+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T02:06:31.718+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T02:06:31.719+0530 [ERROR] scp stderr: "Sink: C0644 825 terraform_629341923.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\n"
+2024-12-25T02:06:31.719+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:31.720+0530 [DEBUG] starting remote command: chmod 0777 /tmp/terraform_629341923.sh
+2024-12-25T02:06:31.724+0530 [DEBUG] remote command exited with '0': chmod 0777 /tmp/terraform_629341923.sh
+2024-12-25T02:06:31.724+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:31.725+0530 [DEBUG] Starting remote scp process:  'scp' -vt /tmp
+2024-12-25T02:06:31.725+0530 [DEBUG] starting remote command: /tmp/terraform_629341923.sh
+2024-12-25T02:06:31.726+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T02:06:31.726+0530 [DEBUG] Beginning file upload...
+2024-12-25T02:06:31.732+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T02:06:31.732+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T02:06:31.733+0530 [ERROR] scp stderr: "Sink: C0644 318 terraform_1643185581.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\n"
+2024-12-25T02:06:31.733+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:31.735+0530 [DEBUG] starting remote command: chmod 0777 /tmp/terraform_1643185581.sh
+2024-12-25T02:06:31.739+0530 [DEBUG] remote command exited with '0': chmod 0777 /tmp/terraform_1643185581.sh
+2024-12-25T02:06:31.739+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:31.740+0530 [DEBUG] starting remote command: /tmp/terraform_1643185581.sh
+2024-12-25T02:06:42.059+0530 [DEBUG] remote command exited with '0': /tmp/terraform_629341923.sh
+2024-12-25T02:06:42.059+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:42.060+0530 [DEBUG] Starting remote scp process:  'scp' -vt /tmp
+2024-12-25T02:06:42.060+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T02:06:42.060+0530 [DEBUG] Copying input data into temporary file so we can read the length
+2024-12-25T02:06:42.087+0530 [DEBUG] Beginning file upload...
+2024-12-25T02:06:42.088+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T02:06:42.088+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T02:06:42.089+0530 [ERROR] scp stderr: "Sink: C0644 0 terraform_629341923.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\n"
+2024-12-25T02:06:42.120+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2024-12-25T02:06:44.705+0530 [DEBUG] remote command exited with '0': /tmp/terraform_1847192926.sh
+2024-12-25T02:06:44.705+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:44.706+0530 [DEBUG] Starting remote scp process:  'scp' -vt /tmp
+2024-12-25T02:06:44.707+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T02:06:44.707+0530 [DEBUG] Copying input data into temporary file so we can read the length
+2024-12-25T02:06:44.730+0530 [DEBUG] Beginning file upload...
+2024-12-25T02:06:44.730+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T02:06:44.731+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T02:06:44.731+0530 [ERROR] scp stderr: "Sink: C0644 0 terraform_1847192926.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\n"
+2024-12-25T02:06:44.764+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2024-12-25T02:06:48.026+0530 [DEBUG] remote command exited with '0': /tmp/terraform_1315046294.sh
+2024-12-25T02:06:48.026+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:48.026+0530 [DEBUG] Starting remote scp process:  'scp' -vt /tmp
+2024-12-25T02:06:48.027+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T02:06:48.027+0530 [DEBUG] Copying input data into temporary file so we can read the length
+2024-12-25T02:06:48.048+0530 [DEBUG] Beginning file upload...
+2024-12-25T02:06:48.049+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T02:06:48.049+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T02:06:48.051+0530 [ERROR] scp stderr: "Sink: C0644 0 terraform_1315046294.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\n"
+2024-12-25T02:06:48.082+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2024-12-25T02:06:54.665+0530 [DEBUG] remote command exited with '0': /tmp/terraform_1643185581.sh
+2024-12-25T02:06:54.665+0530 [DEBUG] opening new ssh session
+2024-12-25T02:06:54.665+0530 [DEBUG] Starting remote scp process:  'scp' -vt /tmp
+2024-12-25T02:06:54.666+0530 [DEBUG] Started SCP session, beginning transfers...
+2024-12-25T02:06:54.667+0530 [DEBUG] Copying input data into temporary file so we can read the length
+2024-12-25T02:06:54.685+0530 [DEBUG] Beginning file upload...
+2024-12-25T02:06:54.686+0530 [DEBUG] SCP session complete, closing stdin pipe.
+2024-12-25T02:06:54.686+0530 [DEBUG] Waiting for SSH session to complete.
+2024-12-25T02:06:54.687+0530 [ERROR] scp stderr: "Sink: C0644 0 terraform_1643185581.sh\nscp: debug1: fd 0 clearing O_NONBLOCK\r\n"
+2024-12-25T02:06:54.720+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T02:06:54.722+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 id=1261759
+2024-12-25T02:06:54.722+0530 [DEBUG] provider: plugin exited

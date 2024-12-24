@@ -588,3 +588,66 @@
 2024-12-25T01:45:02.430+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
 2024-12-25T01:45:02.432+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 id=1258394
 2024-12-25T01:45:02.432+0530 [DEBUG] provider: plugin exited
+2024-12-25T02:15:38.279+0530 [INFO]  Terraform version: 1.10.3
+2024-12-25T02:15:38.279+0530 [DEBUG] using github.com/hashicorp/go-tfe v1.70.0
+2024-12-25T02:15:38.279+0530 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.0
+2024-12-25T02:15:38.279+0530 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2024-12-25T02:15:38.279+0530 [DEBUG] using github.com/zclconf/go-cty v1.15.1-0.20241111215639-63279be090d7
+2024-12-25T02:15:38.279+0530 [INFO]  Go runtime version: go1.23.3
+2024-12-25T02:15:38.279+0530 [INFO]  CLI args: []string{"terraform", "show"}
+2024-12-25T02:15:38.279+0530 [DEBUG] Attempting to open CLI config file: /home/msis/.terraformrc
+2024-12-25T02:15:38.279+0530 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2024-12-25T02:15:38.279+0530 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2024-12-25T02:15:38.279+0530 [DEBUG] ignoring non-existing provider search directory /home/msis/.terraform.d/plugins
+2024-12-25T02:15:38.279+0530 [DEBUG] ignoring non-existing provider search directory /home/msis/.local/share/terraform/plugins
+2024-12-25T02:15:38.279+0530 [DEBUG] ignoring non-existing provider search directory /usr/share/ubuntu/terraform/plugins
+2024-12-25T02:15:38.279+0530 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2024-12-25T02:15:38.279+0530 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2024-12-25T02:15:38.279+0530 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2024-12-25T02:15:38.279+0530 [INFO]  CLI command args: []string{"show"}
+2024-12-25T02:15:38.361+0530 [DEBUG] checking for provisioner in "."
+2024-12-25T02:15:38.366+0530 [DEBUG] checking for provisioner in "/usr/bin"
+2024-12-25T02:15:38.448+0530 [DEBUG] checking for provisioner in "."
+2024-12-25T02:15:38.453+0530 [DEBUG] checking for provisioner in "/usr/bin"
+2024-12-25T02:15:38.453+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T02:15:38.453+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T02:15:38.465+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5"]
+2024-12-25T02:15:38.465+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 pid=1263120
+2024-12-25T02:15:38.465+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5
+2024-12-25T02:15:38.468+0530 [INFO]  provider.terraform-provider-null_v3.2.3_x5: configuring server automatic mTLS: timestamp="2024-12-25T02:15:38.468+0530"
+2024-12-25T02:15:38.481+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T02:15:38.481+0530 [DEBUG] provider.terraform-provider-null_v3.2.3_x5: plugin address: address=/tmp/plugin1595388459 network=unix timestamp="2024-12-25T02:15:38.481+0530"
+2024-12-25T02:15:38.491+0530 [DEBUG] No provider meta schema returned
+2024-12-25T02:15:38.492+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T02:15:38.493+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/null/3.2.3/linux_amd64/terraform-provider-null_v3.2.3_x5 id=1263120
+2024-12-25T02:15:38.493+0530 [DEBUG] provider: plugin exited
+2024-12-25T02:15:38.493+0530 [DEBUG] created provider logger: level=debug
+2024-12-25T02:15:38.493+0530 [INFO]  provider: configuring client automatic mTLS
+2024-12-25T02:15:38.498+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0 args=[".terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0"]
+2024-12-25T02:15:38.498+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0 pid=1263129
+2024-12-25T02:15:38.498+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0
+2024-12-25T02:15:38.502+0530 [INFO]  provider.terraform-provider-ssh_v2.7.0: configuring server automatic mTLS: timestamp="2024-12-25T02:15:38.502+0530"
+2024-12-25T02:15:38.514+0530 [DEBUG] provider: using plugin: version=5
+2024-12-25T02:15:38.514+0530 [DEBUG] provider.terraform-provider-ssh_v2.7.0: plugin address: address=/tmp/plugin2567710547 network=unix timestamp="2024-12-25T02:15:38.514+0530"
+2024-12-25T02:15:38.524+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-12-25T02:15:38.525+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/loafoe/ssh/2.7.0/linux_amd64/terraform-provider-ssh_v2.7.0 id=1263129
+2024-12-25T02:15:38.525+0530 [DEBUG] provider: plugin exited
+2024-12-25T02:15:47.190+0530 [INFO]  Terraform version: 1.10.3
+2024-12-25T02:15:47.191+0530 [DEBUG] using github.com/hashicorp/go-tfe v1.70.0
+2024-12-25T02:15:47.191+0530 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.0
+2024-12-25T02:15:47.191+0530 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2024-12-25T02:15:47.191+0530 [DEBUG] using github.com/zclconf/go-cty v1.15.1-0.20241111215639-63279be090d7
+2024-12-25T02:15:47.191+0530 [INFO]  Go runtime version: go1.23.3
+2024-12-25T02:15:47.191+0530 [INFO]  CLI args: []string{"terraform", "state", "list"}
+2024-12-25T02:15:47.191+0530 [DEBUG] Attempting to open CLI config file: /home/msis/.terraformrc
+2024-12-25T02:15:47.191+0530 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2024-12-25T02:15:47.191+0530 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2024-12-25T02:15:47.191+0530 [DEBUG] ignoring non-existing provider search directory /home/msis/.terraform.d/plugins
+2024-12-25T02:15:47.191+0530 [DEBUG] ignoring non-existing provider search directory /home/msis/.local/share/terraform/plugins
+2024-12-25T02:15:47.191+0530 [DEBUG] ignoring non-existing provider search directory /usr/share/ubuntu/terraform/plugins
+2024-12-25T02:15:47.191+0530 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2024-12-25T02:15:47.191+0530 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2024-12-25T02:15:47.191+0530 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2024-12-25T02:15:47.191+0530 [INFO]  CLI command args: []string{"state", "list"}
+2024-12-25T02:15:47.274+0530 [DEBUG] checking for provisioner in "."
+2024-12-25T02:15:47.279+0530 [DEBUG] checking for provisioner in "/usr/bin"

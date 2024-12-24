@@ -1,0 +1,29 @@
+terraform init
+
+terraform validate
+
+terraform plan
+
+#For Logs
+export TF_LOG=DEBUG
+export TF_LOG_PATH=terraform.log
+
+
+terraform apply
+
+
+#To get Terraform State 
+
+terraform state list
+	
+	(or)
+
+terraform show
+
+#tainting a resource marks it for destruction and recreation during the next terraform apply
+
+terraform state rm '<resource_name>'
+
+	(or)
+
+terraform taint '<resource_name>'
