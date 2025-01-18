@@ -2,7 +2,7 @@ terraform {
   required_providers {
     ssh = {
       source  = "loafoe/ssh"
-      version = "2.7.0" # Use the latest compatible version
+      version = "2.7.0" # Used the latest compatible version
     }
     null = {
       source  = "hashicorp/null"
@@ -38,13 +38,13 @@ resource "null_resource" "deploy_app" {
   }
 
   provisioner "file" {
-    source      = "${path.module}/mompopcafe"  # Ensure the source path is correct
-    destination = "/tmp/mompopcafe"  # Copy the mompopcafe folder to /tmp on remote machines
+    source      = "${path.module}/mompopcafe"  # Ensuring the source path is correct
+    destination = "/tmp/mompopcafe"  # Copying the mompopcafe folder to /tmp on remote machines
   }
 
   provisioner "file" {
-    source      = "${path.module}/mompopdb"  # Ensure the source path is correct
-    destination = "/tmp/mompopdb"  # Copy the mompopcafe folder to /tmp on remote machines
+    source      = "${path.module}/mompopdb"  # Ensuring the source path is correct
+    destination = "/tmp/mompopdb"  # Copying the mompopcafe folder to /tmp on remote machines
   }
 
 
