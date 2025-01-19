@@ -13,9 +13,9 @@ resource "null_resource" "install_apache" {
 
     # Connection details for SSH
     connection {
-      host        = "172.16.51.47"  # Replace with the IP of your physical server
+      host        = "172.16.51.47"  # Replace with the IP of host server
       type        = "ssh"
-      user        = "msis"   # Replace with your SSH username
+      user        = "msis"   # Replace with SSH username
       private_key = file("~/.ssh/id_rsa")  # Path to your private SSH key
       timeout     = "2m"
     }
